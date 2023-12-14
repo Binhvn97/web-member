@@ -1,0 +1,88 @@
+{
+  "layout": {
+    "header": {
+      "Location": "Location",
+      "Mail": "Mail us",
+      "Call": "Call us",
+      "Home": "Home",
+      "About": "About",
+      "AboutTech": "About Tech",
+      "OurCoreTeam": "Our Core Team",
+      "News": "News",
+      "Projects": "Projects",
+      "ContactUs": "Contact Us",
+      "Vietnamese": "Vietnamese",
+      "English": "English"
+    },
+    "footer": {
+      "PartnersAndCustomers": "Partners and Customers",
+      "OurSupportPartner": "Our Support Partner",
+      "Contact": "Contact",
+      "QuestionsOrConcerns": "Questions or concerns? Just fill out the form and our support team will get back to you within 24 hours.",
+      "FirstName": "First Name",
+      "LastName": "Last Name",
+      "PhoneNumber": "Phone Number",
+      "Email": "Email",
+      "Message": "Message",
+      "SubmitNow": "Submit now",
+      "OurServices": "Our Services",
+      "DigitalTransformation": "Digital transformation",
+      "RDServices": "R&D services",
+      "OutsourcingServices": "Outsourcing services",
+      "ProductDevelopment": "Product development",
+      "UsefulLinks": "Useful Links",
+      "Copyright": "Copyright ©{year} ARI Technology Co ., JSC. All rights reserved."
+    },
+    "validation": {
+      "required": "Please enter your content!",
+      "email": "Please enter a valid email address!",
+      "mincheck": "Please choose the least "
+    }
+  },
+  "page": {
+    "home": {
+      "EnhanceVietnam": "Enhance Vietnam’s intellectual value",
+      "ChooseService": "Choose the service you want us to help with",
+      "DigitalTransformation": "Digital Transformation",
+      "RDServices": "R&D Services",
+      "OutsourcingServices": "Outsourcing Services",
+      "ProductDevelopment": "Product Development",
+      "GetStarted": "Get Started",
+      "ABOUT": "ABOUT",
+      "ARIIs": "ARI is one of the",
+      "BestTechnicalAgency": "Best Technical Agency",
+      "About1": "ARI Technology Joint Stock Company was established in 2018 and headquartered in Ho Chi Minh City.",
+      "About2": "We specialize in consulting and delivering digital transformation solutions to address real-world problems, help customers to overcome their business challenges to achieve the highest business operations efficiency.",
+      "About3": "With a team of young and creative talents, ARI always aims at the most innovative and top-notch quality products, ensuring that those products will satisfy the customer’s needs.",
+      "OurMission": "Our Mission",
+      "WeProvide": "We provide Software Engineering & Consulting",
+      "Services": "Services",
+      "ARightChoice": "A right choice that makes the difference to others",
+      "ARINotStrives": "ARI not only strives to become one of the leading technology companies of Industrial Revolution 4.0 in Vietnam, but also a reliable outsourcing company that provides high-quality software development services at a competitive price.",
+      "CoreValue": "Core Value",
+      "ExecutiveBoard": "Executive Board",
+      "WeLove": "“We love integrating technology into our daily life, making a more comfortable and relaxing life.”",
+      "SeeMore": "See more"
+    },
+    "about": {
+      "member": {
+        "Title": "Our Core Team",
+        "Description": "We love integrating technology into our daily life, making a more comfortable and relaxing life."
+      },
+      "tech": {
+        "Title": "About Tech",
+        "Description": "We are continuously learning and developing our expertise to meet the growing market demands."
+      }
+    },
+    "news": {
+      "Title": "News",
+      "Description": "We Update News Everyday.",
+      "OtherRelated": "Other Related News"
+    },
+    "projects": {
+      "Title": "Successful Projects",
+      "Description": "Our Projects With Partners",
+      "OtherRelated": "Other Related Projects"
+    }
+  }
+}

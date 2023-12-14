@@ -1,0 +1,88 @@
+{
+  "layout": {
+    "header": {
+      "Location": "Trụ sở",
+      "Mail": "Hộp thư",
+      "Call": "Liên hệ",
+      "Home": "Trang chủ",
+      "About": "Giới thiệu",
+      "AboutTech": "Công nghệ",
+      "OurCoreTeam": "Đội ngũ phát triển chính",
+      "News": "Tin tức",
+      "Projects": "Dự án",
+      "ContactUs": "Liên hệ",
+      "Vietnamese": "Tiếng Việt",
+      "English": "Tiếng Anh"
+    },
+    "footer": {
+      "PartnersAndCustomers": "Đối tác và khách hàng",
+      "OurSupportPartner": "Đối tác của chúng tôi",
+      "Contact": "Liên hệ",
+      "QuestionsOrConcerns": "Nếu bạn có câu hỏi hoặc muốn liên hệ với chúng tôi, vui lòng điền thông tin liên lạc và chi tiết yêu cầu của bạn vào biểu mẫu. Chúng tôi sẽ liên hệ lại trong vòng 24 giờ.",
+      "FirstName": "Tên",
+      "LastName": "Họ",
+      "PhoneNumber": "Số điện thoại",
+      "Email": "Email",
+      "Message": "Nội dung",
+      "SubmitNow": "Gửi",
+      "OurServices": "Dịch vụ",
+      "DigitalTransformation": "Chuyển đổi số",
+      "RDServices": "Nghiên cứu & phát triển",
+      "OutsourcingServices": "Gia công phần mềm",
+      "ProductDevelopment": "Phát triển sản phẩm",
+      "UsefulLinks": "Liên kết hữu ích",
+      "Copyright": "Bản quyền ©{year} ARI Technology Co., JSC. Bảo lưu mọi quyền."
+    },
+    "validation": {
+      "required": "Xin vui lòng nhập nội dung!",
+      "email": "Xin vui lòng nhập địa chỉ email hợp lệ!",
+      "mincheck": "Xin vui lòng chọn ít nhất "
+    }
+  },
+  "page": {
+    "home": {
+      "EnhanceVietnam": "Nâng cao giá trị trí tuệ Việt",
+      "ChooseService": "Chọn dịch vụ bạn cần chúng tôi hỗ trợ",
+      "DigitalTransformation": "Tư vấn chuyển đổi số",
+      "RDServices": "Dịch vụ nghiên cứu và phát triển",
+      "OutsourcingServices": "Dịch vụ gia công phần mềm",
+      "ProductDevelopment": "Phát triển sản phẩm phần mềm",
+      "GetStarted": "Bắt đầu",
+      "ABOUT": "Giới thiệu ARI",
+      "ARIIs": "ARI là một trong những",
+      "BestTechnicalAgency": "công ty công nghệ tốt nhất",
+      "About1": "Công Ty Cổ Phần Công Nghệ ARI được thành lập vào năm 2018 và có trụ sở chính tại Thành phố Hồ Chí Minh.",
+      "About2": "Chúng tôi chuyên tư vấn và cung cấp các giải pháp chuyển đổi số nhằm giải quyết các vấn đề thực tế, giúp khách hàng vượt qua những thách thức, rào cản và đạt được hiệu quả cao nhất trong quá trình vận hành, kinh doanh.",
+      "About3": "Với đội ngũ tài năng trẻ và sáng tạo, ARI luôn hướng đến những sản phẩm chất lượng và tiên tiến nhất, đảm bảo đáp ứng tối đa yêu cầu của khách hàng.",
+      "OurMission": "Sứ mệnh",
+      "WeProvide": "Chúng tôi cung cấp kỹ thuật & tư vấn phần mềm",
+      "Services": "Dịch vụ",
+      "ARightChoice": "Sự lựa chọn đúng đắn mang đến những giá trị khác biệt",
+      "ARINotStrives": "ARI phấn đấu trở thành một trong những công ty công nghệ dẫn đầu cuộc Cách mạng Công nghiệp 4.0 tại Việt Nam, đồng thời cũng là một công ty gia công phần mềm đáng tin cậy, nơi khách hàng có thể tìm thấy các dịch vụ phát triển phần mềm chất lượng cao với giá cả hợp lý nhất.",
+      "CoreValue": "Giá trị cốt lõi",
+      "ExecutiveBoard": "Hội đồng quản trị",
+      "WeLove": "“Chúng tôi yêu thích tích hợp công nghệ vào cuộc sống hằng ngày, giúp mọi thứ trở nên thoải mái và dễ dàng hơn.”",
+      "SeeMore": "Xem thêm"
+    },
+    "about": {
+      "member": {
+        "Title": "Đội Ngũ Phát Triển Chính",
+        "Description": "Chúng tôi yêu thích tích hợp công nghệ vào cuộc sống hằng ngày, giúp mọi thứ trở nên thoải mái và dễ dàng hơn."
+      },
+      "tech": {
+        "Title": "Công Nghệ",
+        "Description": "Chúng tôi không ngừng học hỏi và trau dồi chuyên môn của mình để đáp ứng nhu cầu phát triển của thị trường."
+      }
+    },
+    "news": {
+      "Title": "Tin tức",
+      "Description": "Tin tức được cập nhật liên tục",
+      "OtherRelated": "BÀI VIẾT LIÊN QUAN"
+    },
+    "projects": {
+      "Title": "Dự án thành công",
+      "Description": "Các dự án của chúng tôi với các đối tác",
+      "OtherRelated": "DỰ ÁN LIÊN QUAN"
+    }
+  }
+}
