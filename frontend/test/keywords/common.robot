@@ -289,6 +289,7 @@ Click on the "${text}" button in the "${name}" table line
   ${name}=                  Check Text                        ${name}
   ${element}=               Get Element Table Item By Name    ${name}                       //button[@title = "${text}"]
   Click                     ${element}
+  # Sleep    0.2
   Click Confirm To Action
 
 The status button in the "${name}" table line change to "${status}"
@@ -364,13 +365,14 @@ User look message "${message}" popup
   END
 
 Click Confirm To Action
-  ${element}                Set Variable                      xpath=//*[contains(@class, "ant-popover ant-popconfirm")]//*[contains(@class, "ant-btn-primary")]
+  # ${element}                Set Variable                      //*[contains(@class, "ant-popover ant-popconfirm")]//*[contains(@class, "ant-btn-primary")]
+  ${element}                Set Variable                      //*[contains(@class, "ant-popover")]//*[contains(@class, "ant-btn-primary")]
   ${count}=                 Get Element Count                 ${element}
   IF    ${count} > 0
     Click                   ${element}
     Sleep                   ${SHOULD_TIMEOUT}
   END
-  ${element}=               Set Variable                      xpath=//*[contains(@class, "swal2-close")]
+  ${element}=               Set Variable                      //*[contains(@class, "swal2-close")]
   ${passed}                 Run Keyword And Return Status
                             ...   Element Should Be Visible   ${element}
   IF    '${passed}' == 'True'
@@ -422,12 +424,10 @@ Click "${name}" line in the avatar's account
   Wait Until Element Spin
 
 Click on cross icon in select "${name}" 
-  IF    '${name}' == 'Tải ảnh lên'
-    Click                   //*[contains(@class, "ant-form-item-label")]/label[text()="${name}"]//ancestor::div[contains(@class, "ant-row")]//button[contains(@class,'icon')]/*
-  ELSE                  
-    Click                   //*[contains(@class, "ant-form-item-label")]/label[text()="${name}"]//ancestor::div[contains(@class, "ant-row")]//span[contains(@class, "anticon-close-circle")]/*[1]
-  END
   Wait Until Element Spin
+  ${element}=               Get Element                       //*[contains(@class, "ant-form-item-label")]/label[text()="${name}"]//ancestor::div[contains(@class, "ant-row")]//span[contains(@class, "anticon-close-circle")]/*[1]           
+  Click                     ${element}
+
 
 Click on cross icon inside image in "${name}"
   ${element}=               Get Element Form Item By Name     ${name}                       //button[contains(@class,'items-center')]//*[contains(@id,'Layer_1')]
@@ -457,6 +457,8 @@ Click on the "${text}" button in the "${name}" table line with cancel
 Click "${type}" in "${name}" with "${text}"
   IF    '${text}' == 'today'
     ${text}=                Get Current Date                  local                         result_format=%d-%m-%Y
+  ELSE IF    '${text}' == 'yesterday'
+    ${text}=                Get Current Date                  local                         -1 day                                     result_format=%d-%m-%Y
   ELSE
     ${text}=                Get Random Text                   ${type}                       ${text}  
   END
@@ -620,10 +622,21 @@ Get the image's information in "${name}" field
   [Return]                  ${infor}
 
 ### --- Check UI --- ###
-Heading should contain "${text}" inner Text
+Heading should contain "${text}" inner text
   ${text}=                  Check Text                        ${text}
   ${element}=               Set Variable                      //header//*[contains(@class, 'text-xl') and contains(text(),'${text}')]
   Wait Until Element Is Existent                              ${element}
+
+Heading of separated group should contain "${text}" inner text
+  ${text}=                  Check Text                        ${text}
+  ${element}=               Set Variable                      //*[contains(@class,'mx-auto')]//*[contains(@class, 'text-xl') and contains(text(),"${text}")]
+  ${cnt}=                   Get Element Count                 ${element}
+  IF    ${cnt} > 0
+    Wait Until Element Is Existent                            ${element}
+  ELSE
+    ${element}=             Set Variable                      //*[contains(@class,'mx-auto')]//*[contains(@class, 'text-lg') and contains(text(),'${text}')]
+    Wait Until Element Is Existent                            ${element}
+  END
 
 Webpage should contain "${name}" input field
   ${element}=               Get Element                       //label[@title="${name}"]//ancestor::div[contains(@class,"ant-row")]//div[@class='ant-form-item-control-input']

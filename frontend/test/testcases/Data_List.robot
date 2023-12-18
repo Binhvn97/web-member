@@ -428,10 +428,11 @@ DL_40 Verify the search function of the magnifier icon in "Name" column by enter
 
 DL_41 Verify the search by date function of the calendar icon in "Created" column
   [Tags]                                                                                                Search                     Partner                Order
+  ${today}=                                                                                             Get Current Date             local                           result_format=%d/%m/%Y
   Create a test data type in "Partner" list
   When Click on calendar icon in "Created" table cell
-  When Enter "date" in placeholder "Ngày bắt đầu" with "today"
-  When Enter "date" in placeholder "Ngày kết thúc" with "today"
+  When Enter "date" in placeholder "Ngày bắt đầu" with "${today}"
+  When Enter "date" in placeholder "Ngày kết thúc" with "${today}"
   When Click "Tìm kiếm" button
   Then "_@Name@_" should be visible in the table line
   When Click on the "Xóa" button in the "_@Name@_" table line
@@ -1655,17 +1656,17 @@ DL_140 Verity that change the data type's information by entering the valid data
 
 DL_140_02 Verity that change the data type's information by entering the valid data in "Name" filed (ENGLISH tab)
   [Tags]                                                                                                EditInfo                   Member                  Valid
-  Create a test data type in "Member" list
+  ${Data}=                          Create a test data type in "Member" list
   When Click on the "Sửa" button in the "_@Name@_" table line
   When Click on "ENGLISH" tab
   When Enter "test name" in "Name" with "_RANDOM_"
   When Click "Lưu lại" button
   Then User look message "Cập nhật thành công" popup
-  When Click on the "Sửa" button in the "_@Name@_" table line
+  When Click on the "Sửa" button in the "${Data}" table line
   When Click on "ENGLISH" tab
   Then Data's information in "Name" should be equal "_@Name@_"
   When Click "Huỷ bỏ" button
-  When Click on the "Xóa" button in the "_@Name@_" table line
+  When Click on the "Xóa" button in the "${Data}" table line
 
 DL_141 Verity that change the data type's information by entering the valid data in "Vị trí" filed (VIETNAM tab)
   [Tags]                                                                                                EditInfo                   Member                  Valid
